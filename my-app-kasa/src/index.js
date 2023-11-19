@@ -6,6 +6,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import KasaBanner from "./component/index";
 import ImgBannerAccueil from "./component/imgbanner";
+import Accueil from "./component/GenerateArticle";
+import Footer from "./component/footer";
+import ImgBannerAp from "./component/imgbannerap";
+import Dropdown from "./component/list";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +22,20 @@ root.render(
             <div>
               <KasaBanner />
               <ImgBannerAccueil />
+              <Accueil />
+              <Footer />
+            </div>
+          }
+        />
+
+        <Route
+          path="/apropos"
+          element={
+            <div>
+              <KasaBanner />
+              <ImgBannerAp />
+              <Dropdown />
+              <Footer />
             </div>
           }
         />

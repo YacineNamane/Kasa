@@ -1,3 +1,5 @@
+/*style Banner */
+
 .Banner {
   color: #ff6060;
   display: flex;
@@ -38,11 +40,90 @@ a {
   height: 250px;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 
 #imgaccueil {
   width: 100%;
+  border-radius: 10px;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin: 20px;
+}
+/*Style articles */
+
+figure {
+  display: flex;
+  background-color: #ff6060;
+  width: 30%;
+  margin: 0px;
+  position: relative;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+figcaption {
+  position: absolute;
+  width: 50%;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  font-family: montserrat;
+  font-size: 15px;
+}
+.hotel-contenair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+/*style footer*/
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+  font-family: montserrat;
+}
+
+/*Page A propos */
+.list {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  height: 40px;
+  font-family: montserrat;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.group-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  gap: 10px;
+}
+.content-list p {
+  background-color: #f6f6f6;
+  color: #ff6060;
+}
+.Arrow {
+  height: 12px;
+  width: 23px;
 }
