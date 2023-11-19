@@ -134,6 +134,10 @@ p {
 }
 
 .Arrow {
+  transition: transform 0.3s ease;
   height: 12px;
   width: 23px;
+}
+.Arrow.expanded {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

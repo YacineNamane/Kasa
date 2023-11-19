@@ -12,13 +12,9 @@ const DropdownList = ({ title, content }) => {
       <div className="list" onClick={toggleDropdown}>
         {title}
         <img
-          className="Arrow"
+          className={`Arrow ${isExpanded ? "expanded" : ""}`}
           src="Arrow.png"
           alt={isExpanded ? "Fermer" : "Ouvrir"}
-          style={{
-            transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
-            transition: "transform 0.3s ease",
-          }}
         />
       </div>
       {isExpanded && (
