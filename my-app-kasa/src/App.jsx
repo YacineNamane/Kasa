@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import home from "./pages/home";
-import apropos from "./pages/apropos";
-import fichelogement from "./pages/fichelogement";
-import bugpage from "./pages/bugpage";
+import Home from "./pages/Home";
+import apropos from "./pages/APropos";
+import FicheLogement from "./pages/FicheLogement";
+import bugpage from "./pages/BugPage";
 import "./App.css";
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
           <Routes>
             {/* Mes routes */}
 
-            <Route path="/" exact component={home} />
+            <Route path="/" exact component={Home} />
             <Route path="/apropos" component={apropos} />
-            <Route path="/fichelogement" component={fichelogement} />
-            <Route path="/bugpage" component={bugpage} />
+            <Route path="/FicheLogement/:id" element={FicheLogement} />
+            <Route path="*" element={bugpage} />
           </Routes>
         </Router>
       </header>

@@ -1,8 +1,11 @@
-function ImgBannerAccueil() {
+import React from "react";
+
+function ImgBanner({ imageUrl }) {
   return (
     <div className="imgaccueilcontainner">
-      <img id="imgaccueil" src="imageaccueil.png" alt="banneraccueil"></img>
+      <img id="imgaccueil" src={imageUrl} alt="banneraccueil" />
     </div>
   );
 }
-export default ImgBannerAccueil;
+
+export default ImgBanner;

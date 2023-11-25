@@ -1,12 +1,12 @@
-// Accueil.jsx
+// Home.jsx
 import React, { useEffect, useState } from "react";
-import ArticleHotel from "./article";
+import ArticleHotel from "./ArticleHotel";
 
-const Accueil = () => {
+const GeneratArticle = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("article.json")
+    fetch("article.JSON")
       .then((response) => response.json())
       .then((data) => setArticles(data))
       .catch((error) =>
@@ -29,4 +29,4 @@ const Accueil = () => {
   );
 };
 
-export default Accueil;
+export default GeneratArticle;

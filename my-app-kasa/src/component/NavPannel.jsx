@@ -4,7 +4,7 @@ function BannerKasa() {
   return (
     <div className="Banner">
       <div className="logo">
-        <img id="logokasa" src="LOGO.png" alt="logo" />
+        <img id="logokasa" src="Logo.png" alt="logo" />
       </div>
       <nav>
         <div className="nav">
