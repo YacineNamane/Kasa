@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/Arrow.png";
 const DropdownList = ({ title, content }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -12,13 +13,13 @@ const DropdownList = ({ title, content }) => {
         {title}
         <img
           className={`Arrow ${isExpanded ? "expanded" : ""}`}
-          src="Arrow.png"
+          src={logo}
           alt={isExpanded ? "Fermer" : "Ouvrir"}
         />
       </div>
       {isExpanded && (
         <div className="content-list">
-          <p id="p-list">{content}</p>
+          <p>{content}</p>
         </div>
       )}
     </div>

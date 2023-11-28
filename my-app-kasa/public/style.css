@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*style Banner */
 .Banner {
   color: #ff6060;
@@ -27,8 +28,8 @@ a {
 }
 
 #logokasa {
-  width: 30%;
-  height: 100%;
+  width: 150px;
+  height: 46px;
   padding: 25px 0px 0px 50px;
 }
 
@@ -112,7 +113,7 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #ff6060;
-  height: 40px;
+  height: 25px;
   font-family: montserrat;
   color: white;
   padding: 12px;
@@ -159,4 +160,93 @@ h2 {
   color: #ff6060;
   font-family: montserrat;
   text-decoration: underline;
+}
+
+/* Article détails */
+.hotel-details {
+  height: 1100px;
+  margin: 40px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-flex ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.tags-flex ul li {
+  float: left;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  height: 19px;
+  width: auto;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.dropdown-description {
+  width: 100%;
+}
+
+.Description-Equipement-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+span {
+  font-family: montserrat;
+}
+
+.content-list p ul {
+  list-style-type: none;
+}
+
+.tags-flex {
+  display: flex;
+  margin-left: -40px;
+}
+
+.host-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14%;
+  gap: 2px;
+  padding-left: 5px;
+}
+
+.host-section p {
+  color: #ff6060;
+  font-family: montserrat;
+}
+
+.host-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.info-pannel-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.host-section-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.star {
+  width: 26px;
 }/*# sourceMappingURL=style.css.map */
