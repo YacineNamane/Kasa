@@ -8,7 +8,7 @@ const DropdownList = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className="list-responsive">
       <div className="list" onClick={toggleDropdown}>
         {title}
         <img

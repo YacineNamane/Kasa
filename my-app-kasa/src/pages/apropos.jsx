@@ -7,7 +7,7 @@ function Apropos() {
   return (
     <div>
       <BannerKasa />
-      <ImgBanner imageUrl="imageapropos.png" />
+      <ImgBanner imageUrl="imageapropos.png" showText={false} />
       <Dropdown />
       <Footer />
     </div>

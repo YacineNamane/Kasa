@@ -8,7 +8,7 @@ function Accueil() {
   return (
     <div>
       <KasaBanner />
-      <ImgBanner imageUrl="imageaccueil.png" />
+      <ImgBanner imageUrl="imageaccueil.png" showText={true} />
       <GeneratArticle />
       <Footer />
     </div>
