@@ -1,12 +1,12 @@
 import React from "react";
-import BannerKasa from "../component/NavPannel";
+import NavPannel from "../component/NavPannel";
 import ImgBanner from "../component/ImgBanner";
 import Dropdown from "../component/ListDrop";
 import Footer from "../component/Footer";
 function Apropos() {
   return (
     <div>
-      <BannerKasa />
+      <NavPannel />
       <ImgBanner imageUrl="imageapropos.png" showText={false} />
       <Dropdown />
       <Footer />

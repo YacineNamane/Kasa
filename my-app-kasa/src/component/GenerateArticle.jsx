@@ -1,17 +1,24 @@
-// Home.jsx
 import React, { useEffect, useState } from "react";
 import ArticleHotel from "./ArticleHotel";
 
-const GeneratArticle = () => {
+const GenerateArticle = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("article.JSON")
-      .then((response) => response.json())
-      .then((data) => setArticles(data))
-      .catch((error) =>
-        console.error("Erreur lié au fichier JSON ici ! ", error)
-      );
+    const fetchData = async () => {
+      try {
+        const response = await fetch("article.JSON");
+        if (!response.ok) {
+          throw new Error("failed request ! " + response.status);
+        }
+        const data = await response.json();
+        setArticles(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
@@ -29,4 +36,4 @@ const GeneratArticle = () => {
   );
 };
 
-export default GeneratArticle;
+export default GenerateArticle;

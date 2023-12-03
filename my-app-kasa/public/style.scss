@@ -45,13 +45,18 @@ $font-family: "montserrat";
   display: flex;
   justify-content: space-between;
   padding: 29px 0px 0px 0px;
-  gap: 35px;
   text-decoration: none;
+  gap: 35px;
   font-family: $font-family;
 
   a {
     color: $primary-color;
     text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+      color: $primary-color;
+    }
   }
 }
 
@@ -187,6 +192,7 @@ footer {
 .content-list p {
   background-color: $background-color;
   color: $primary-color;
+  font-family: $font-family;
 }
 
 .Arrow {
@@ -391,7 +397,7 @@ span {
 }
 
 /* version mobile */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }

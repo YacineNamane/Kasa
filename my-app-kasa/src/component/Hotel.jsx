@@ -42,7 +42,7 @@ const Hotel = ({
                 <p>{host.name}</p>
               </div>
               <div>
-                <img src={host.picture} alt="owner picture" />
+                <img src={host.picture} alt="owner look" />
               </div>
             </div>
             <div className="host-rating">

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Logo.png";
-function BannerKasa() {
+function NavPannel() {
   return (
     <div className="Banner">
       <div className="logo">
@@ -10,14 +10,19 @@ function BannerKasa() {
       <nav>
         <div className="nav">
           <div>
-            <NavLink to="/"> accueil</NavLink>
+            <NavLink to="/" activeClassName="activeNavLink">
+              {" "}
+              accueil
+            </NavLink>
           </div>
           <div>
-            <NavLink to="/apropos">A propos</NavLink>
+            <NavLink to="/apropos" activeClassName="activeNavLink">
+              A propos
+            </NavLink>
           </div>
         </div>
       </nav>
     </div>
   );
 }
-export default BannerKasa;
+export default NavPannel;

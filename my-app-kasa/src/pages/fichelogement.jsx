@@ -1,13 +1,13 @@
 import React from "react";
-import KasaBanner from "../component/NavPannel";
+import NavPannel from "../component/NavPannel";
 import Footer from "../component/Footer";
-import GeneratHotelInfo from "../component/GenerateHotelInfo";
+import GenerateHotelInfo from "../component/GenerateHotelInfo";
 
 function FicheLogement() {
   return (
     <div>
-      <KasaBanner />
-      <GeneratHotelInfo />
+      <NavPannel />
+      <GenerateHotelInfo />
       <Footer />
     </div>
   );
