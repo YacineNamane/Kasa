@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import AnimatedContent from "./AnimatedContent";
 import logo from "../assets/Arrow.png";
+
 const DropdownList = ({ title, content }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -18,9 +20,7 @@ const DropdownList = ({ title, content }) => {
         />
       </div>
       {isExpanded && (
-        <div className="content-list">
-          <p>{content}</p>
-        </div>
+        <AnimatedContent className="content-list">{content}</AnimatedContent>
       )}
     </div>
   );

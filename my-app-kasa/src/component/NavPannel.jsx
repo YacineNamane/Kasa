@@ -10,15 +10,10 @@ function NavPannel() {
       <nav>
         <div className="nav">
           <div>
-            <NavLink to="/" activeClassName="activeNavLink">
-              {" "}
-              accueil
-            </NavLink>
+            <NavLink to="/"> Accueil</NavLink>
           </div>
           <div>
-            <NavLink to="/apropos" activeClassName="activeNavLink">
-              A propos
-            </NavLink>
+            <NavLink to="/apropos">A propos</NavLink>
           </div>
         </div>
       </nav>
